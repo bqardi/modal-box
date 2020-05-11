@@ -100,8 +100,4 @@ document.addEventListener("DOMContentLoaded", event => {
         modal.classList.remove("js-active");
     }
     //#endregion MODAL
-
-    // setTimeout(() => {
-    //     document.getElementById("gallery").classList.remove("gallery-hidden");
-    // }, 100);
 });
