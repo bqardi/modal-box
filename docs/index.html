@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Modal box component">
+    <title>Modal box</title>
+    <script rel="dns-prefetch" src="https://kit.fontawesome.com/00c72fd824.js" crossorigin="anonymous" defer></script>
+    <link rel="preload stylesheet" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <div id="modal-box" class="modal__box">
+            <div id="modal-close" class="modal__close">
+                <svg class="modal__close-icon" viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"></path></svg>
+            </div>
+            <div class="modal__image-container">
+                <img id="modal-image" src="./images/abstract-2468874_1920.jpg" alt="Abstract" class="modal__image">
+            </div>
+            <div class="modal__text-container">
+                <h2 id="modal-title">Title</h2>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <section class="content">
+            <h2 id="content-title" class="content__title js-full">Random modal gallery</h2>
+            <div id="gallery" class="gallery">
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/abstract-2468874_1920.jpg" alt="Abstract" title="Abstract">
+                    </a>
+                </div>
+                <div class="gallery__item gallery__item-row-span">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/apples-634572_1920.jpg" alt="Apples" title="Apples">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/books-1655783_1920.jpg" alt="Books" title="Books">
+                    </a>
+                </div>
+                <div class="gallery__item gallery__item-row-span">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/brandon-vazquez-jdvpdAvDuB0-unsplash.jpg" alt="Brandon Vazquez" title="Brandon Vazquez">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/butterfly-2049567_1920.jpg" alt="Butterfly" title="Butterfly">
+                    </a>
+                </div>
+                <div class="gallery__item gallery__item-column-span gallery__item-row-span">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/cat-1285634_1920.png" alt="Cat" title="Cat">
+                    </a>
+                </div>
+                <div class="gallery__item gallery__item-row-span">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/clark-van-der-beken-CH0Rho6deI8-unsplash.jpg" alt="Clark Van Der Beken" title="Clark Van Der Beken">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/coffee-171653_1920.jpg" alt="Coffee" title="Coffee">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/fall-1072821_1920.jpg" alt="Fall" title="Fall">
+                    </a>
+                </div>
+                <div class="gallery__item gallery__item-column-span">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/fantasy-3077928_1920.jpg" alt="Fantasy" title="Fantasy">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/hands-600497_1920.jpg" alt="Hands" title="Hands">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/henrik-donnestad-V6Qd6zA85ck-unsplash.jpg" alt="Henrik Donnestad" title="Henrik Donnestad">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/joel-filipe-QwoNAhbmLLo-unsplash.jpg" alt="Joel Filipe" title="Joel Filipe">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/nature-3082832_1920.jpg" alt="Nature" title="Nature">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/nature-3151869_1920.jpg" alt="Nature 2" title="Nature 2">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/orlova-maria-bU8TeXhsPcY-unsplash.jpg" alt="Maria Orlova" title="Maria Orlova">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/plouzane-1758197_1920.jpg" alt="Plouzane" title="Plouzane">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__item-link" href="#">
+                        <img class="gallery__item-image" src="./images/tree-247122_1280.jpg" alt="Tree" title="Tree">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
