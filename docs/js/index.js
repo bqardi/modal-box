@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", event => {
     const galleryItems = document.querySelectorAll(".gallery__item");
-    const contentTitle = document.getElementById("content-title");
-
-    contentTitle.classList.remove("js-full");
 
     //#region RANDOM IMAGE ORDER
     let arrIndexes = uniqueArrayValues(0, galleryItems.length);
@@ -88,6 +85,8 @@ document.addEventListener("DOMContentLoaded", event => {
         modalImage.src = src;
         modalImage.alt = alt;
         modalTitle.textContent = title;
+        let width = 80 * modalImage.offsetWidth / modalImage.offsetHeight;
+        modalBox.style.width = width + "vh";
     }
 
     function openModal(evt) {
